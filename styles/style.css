@@ -33,6 +33,133 @@ font-size: 50px;
     background-image: url(/images/Circle\ design.svg);
     width: 75%;
     background-repeat: no-repeat;
+    transition: width 2s, height 4s;
+}
+.first-influencer img:hover{
+     width: 300px ;
+}
+
+/* popular */
+.container{
+    margin-top: 700px;
+    margin-bottom: 100px;
+    
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    background-color: whitesmoke;
+    margin-left: 10%;
+}
+#popular-title{
+   text-align: center;
+   font-size:28px;
+   font-weight: 600;
+}
+.product{
+    width: 329px;
+    height: 530px;
+    left: 196px;
+    top: 1541px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 0px 100px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.product-img{
+   margin-left: 4%;
+   margin-top: 5%;
+background: url(.jpg);
+border-radius: 5px;
+}
+.product-title{
+    margin-left: 4%;    
+    font-size: 28px;
+    font-style: normal;
+} 
+.product-rating{
+    margin-left: 4%;
+}
+.fa-star{
+color: orange;
+}
+.product-text{
+  
+    margin-left: 4%;
+    color:  #787885;
+    font-style: normal;
+    font-size: 16px;
+   
+}
+.product-value{
+    margin-left: 4%;
+    font-weight: normal;
+    font-size: 24px;
+}
+#next-product{
+    color:#E02C6D; 
+    margin-left: 85%;
+    text-decoration: none;
+    font-weight:bold;    
+}
+/* try something */
+#happiness{
+   display: flex;
+background-color: white;
+
+}
+#happiness img{
+    width: 500px;
+}
+
+/* footer */
+.last-product{
+    padding-top: 40px;
+    background-color:rgb(5, 5, 34);
+    color: white;
+    text-align: center;
+
+}
+.soical-media{
+    font-size: 14px;
+    font-style: normal;
+}
+.fa-instagram,.fa-twitter,.fa-youtube,.fa-facebook{
+    color: whitesmoke;
+    margin-left:20px;    
+}
+/* mobile */
+@media only screen and(max-width:688px){
+    
+.first-container{
+    width: 100%;
+}
+.first-influencer,#happniness{
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+}
+.products{
+    width: 100%;
+}
+
+}
+.happiness{
+    
+    flex-direction: column;
+}
+/* tablet */
+.first-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+
+}
+.products{
+    grid-template-columns: repeat(2,1fr);
+
+}
+.happiness{
+  grid-template-columns: repeat(1,1fr);
 }
 /* popular */
 .container{
